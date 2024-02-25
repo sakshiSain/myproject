@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge</title>
+    <style>
+        /* CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:rgb(62, 41, 14);
+        }
+   
+       
+        header {
+            margin-top: 0px;
+            background-color: rgb(143, 111, 70);
+            position: fixed;
+            width: 100%;
+            align-items: right;
+            padding: 10px;
+            text-align: right;
+            padding-right: 30px;
+
+        }
+        h1 {
+            color:white; /* Change header text color to white */
+            text-align: center;
+        }
+        .button {
+            text-align: right;
+            padding-right: 20px;
+        }
+        .btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: rgb(67, 40, 4);
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+      .btn-red {
+    background-color: rgb(67, 40, 4);
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+        .btn-red-sm {
+    background-color: rgb(67, 40, 4);
+    color: white;
+}
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+       
+        h2, h3 {
+            color: white;
+        }
+        h4 {
+            color: beige;
+        }
+        p {
+            line-height: 1.6;
+            color:rgb(243, 179, 119);
+        }
+        .article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        .article h3 {
+            margin-top: 0;
+        }
+        .btn-group1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .btn1 {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: beige; /* Green */
+            border: none;
+            border-radius: 4px;
+            color: rgb(67, 40, 4);
+            cursor: pointer;
+            text-decoration: none;
+            align-items: right;
+        }
+        main{
+            padding-top:40px;
+        }
+    </style>
+</head>
+<body> <header>
+    
+    <div class="button">
+       <a href="./index1.html"><button class="btn btn-red-sm">Home</button></a>
+        <button class="btn btn-red-sm">Contact</button>
+        <button class="btn btn-red-sm">Information</button>
+       <a href="./about us.html"><button class="btn btn-red-sm">About Us</button></a>
+    </div>
+</header>
+    <main>
+        <h1>Knowledge</h1>
+    
+    <div class="btn-group1">
+        <button class="btn1" onclick="scrollToSection('greenDiy')">Green DIY</button>
+        <button class="btn1" onclick="scrollToSection('greenBusiness')">Green Business</button>
+        <button class="btn1" onclick="scrollToSection('ecoHeroes')">Eco Heroes</button>
+        <button class="btn1" onclick="scrollToSection('fiveRs')">5Rs</button>
+    </div>
+    </main>
+    <div class="container">
+        <h2>Our Knowledge Base</h2>
+        <p>This is where you'll find valuable information, tips, and insights related to sustainable development, green DIY, green business, eco heroes, the 5Rs, and more.</p>
+        <p>Feel free to explore and learn!</p>
+
+        <div class="article">
+            <h3>Introduction to Sustainable Development</h3>
+            <p>Learn about the principles and importance of sustainable development.</p>
+        </div>
+        
+        <div id="greenDiy" class="article">
+            <h3>Green DIY Projects</h3>
+            <p>Discover a variety of DIY projects promoting sustainability, such as upcycling, homemade cleaning products, and solar-powered gadgets.</p>
+            <h4>Upcycling</h4>
+    <p>Discover creative ways to repurpose old or discarded items into new and useful products. Examples include turning old clothing into reusable shopping bags, transforming mason jars into decorative containers, or repurposing wooden pallets into furniture.</p>
+    
+    <h4>Homemade Cleaning Products</h4>
+    <p>Learn how to make your own eco-friendly cleaning products using natural ingredients such as vinegar, baking soda, and essential oils. DIY cleaning solutions are effective, affordable, and free from harmful chemicals that can harm the environment and human health.</p>
+    
+    <h4>Composting</h4>
+    <p>Start your own composting system to recycle organic waste into nutrient-rich soil for gardening. Explore different composting methods, such as backyard composting, vermicomposting (using worms), or indoor composting with compost bins or tumblers.</p>
+    
+    <h4>Sustainable Gardening</h4>
+    <p>Discover tips and techniques for creating a sustainable garden that conserves water, attracts beneficial wildlife, and promotes biodiversity. Learn about companion planting, water-saving irrigation methods, natural pest control, and organic gardening practices.</p>
+    
+    <h4>Solar-Powered Gadgets</h4>
+    <p>Explore DIY projects that harness the power of the sun to create solar-powered gadgets and devices. Examples include solar chargers for electronic devices, solar outdoor lights, and solar-powered water heaters.</p>
+    
+    <h4>Zero Waste Lifestyle</h4>
+    <p>Explore ways to reduce waste and live a more sustainable lifestyle. Learn about the principles of the zero waste movement, including refusing single-use items, reducing consumption, reusing and repairing items, recycling properly, and composting organic waste.</p>
+    
+    <p>By engaging in green DIY projects, individuals can not only save money and express their creativity but also contribute to environmental conservation and sustainability efforts. Get inspired to embark on your own green DIY journey and make a positive impact on the planet!</p>
+
+        </div>
+        
+        <div id="greenBusiness" class="article">
+            <h3>Green Business Practices</h3>
+            <p>Explore tips and strategies for businesses to operate in an environmentally friendly manner.</p>
+            <h4>Energy Efficiency</h4>
+    <p>Implement energy-saving measures such as using energy-efficient lighting, appliances, and HVAC systems. Consider investing in renewable energy sources like solar panels or wind turbines to reduce reliance on fossil fuels.</p>
+    
+    <h4>Waste Reduction</h4>
+    <p>Adopt waste reduction practices such as reducing packaging, implementing recycling and composting programs, and encouraging employees to minimize waste generation. Explore opportunities for product redesign to reduce materials and packaging waste.</p>
+    
+    <h4>Sustainable Supply Chain Management</h4>
+    <p>Assess and optimize your supply chain to minimize environmental impact, promote fair labor practices, and support local communities. Prioritize suppliers that adhere to sustainability standards and certifications.</p>
+    
+    <h4>Green Marketing Strategies</h4>
+    <p>Communicate your commitment to sustainability through green marketing initiatives. Highlight eco-friendly features of your products or services, share stories of environmental stewardship, and engage with customers who value sustainability.</p>
+    
+    <h4>Employee Engagement</h4>
+    <p>Engage employees in sustainability efforts by promoting awareness, providing training on eco-friendly practices, and encouraging participation in green initiatives. Foster a culture of sustainability within your organization and empower employees to contribute to positive change.</p>
+    
+    <h4>Community Engagement</h4>
+    <p>Get involved in local community initiatives and partnerships that support environmental conservation and sustainability. Participate in volunteer programs, sponsor local events, and collaborate with other businesses and organizations to make a collective impact.</p>
+    
+    <p>By incorporating these green business practices into your operations, you can not only reduce your environmental footprint but also improve efficiency, enhance brand reputation, and attract environmentally conscious customers and stakeholders.</p>
+        </div>
+
+        
+        <div id="ecoHeroes" class="article">
+            <h3>Eco Heroes Profiles</h3>
+            <p>Meet inspiring individuals and organizations who are making a significant impact in the field of sustainability and environmental conservation. These eco heroes are leading the way in promoting positive change and raising awareness about pressing environmental issues.</p>
+    
+    <h4>Jane Goodall</h4>
+    <p>Jane Goodall is a renowned primatologist, ethologist, and conservationist best known for her groundbreaking research on chimpanzees in Tanzania. Through her work with the Jane Goodall Institute, she has become a leading advocate for wildlife conservation, habitat preservation, and sustainable living.</p>
+    
+    <h4>Greta Thunberg</h4>
+    <p>Greta Thunberg is a Swedish environmental activist who gained international recognition for her efforts to raise awareness about climate change. She initiated the "Fridays for Future" movement, inspiring millions of young people worldwide to take action against climate change and demand policy changes from governments and corporations.</p>
+    
+    <h4>Wangari Maathai</h4>
+    <p>Wangari Maathai was a Kenyan environmentalist and political activist who founded the Green Belt Movement, an organization focused on tree planting, environmental conservation, and women's rights. She was awarded the Nobel Peace Prize in 2004 for her contributions to sustainable development, democracy, and peace.</p>
+    
+    <h4>Captain Paul Watson</h4>
+    <p>Captain Paul Watson is a marine conservationist and founder of the Sea Shepherd Conservation Society, a non-profit organization dedicated to protecting marine wildlife and habitats. He has led numerous campaigns against illegal fishing, whaling, and other activities that threaten the health of the world's oceans.</p>
+    
+    <h4>Vandana Shiva</h4>
+    <p>Vandana Shiva is an Indian environmental activist, author, and scholar known for her work in promoting biodiversity, sustainable agriculture, and social justice. She has been a vocal critic of industrial agriculture and genetically modified crops, advocating for small-scale farming and community-based food systems.</p>
+    
+    <p>These are just a few examples of the many eco heroes who are leading the charge for a more sustainable and equitable world. Their dedication, passion, and tireless efforts serve as inspiration for individuals and communities everywhere to take action and protect our planet for future generations.</p>
+        </div>
+        
+        <div id="fiveRs" class="article">
+            <h3>The 5Rs</h3>
+            
+    <p>The 5Rs represent a set of principles aimed at reducing waste and promoting sustainability. By following these principles, individuals and businesses can minimize their environmental impact and contribute to a healthier planet.</p>
+    
+    <h4>1. Reduce</h4>
+    <p>Reducing consumption is the first step in waste reduction. This involves being mindful of what we buy and using resources efficiently to minimize waste generation. Strategies for reduction include opting for products with minimal packaging, avoiding single-use items, and adopting a minimalist lifestyle.</p>
+    
+    <h4>2. Reuse</h4>
+    <p>Reuse involves finding new ways to use items instead of disposing of them after a single use. This can include repairing and refurbishing items, donating or selling items that are no longer needed, and using reusable alternatives to disposable products. By extending the lifespan of products, we can reduce the demand for new resources and minimize waste.</p>
+    
+    <h4>3. Recycle</h4>
+    <p>Recycling involves converting waste materials into new products, thereby reducing the need for raw materials and conserving energy. It's important to properly sort and recycle materials such as paper, glass, plastic, and metal to ensure they can be processed effectively. Additionally, supporting businesses that use recycled materials and purchasing products made from recycled content can help close the recycling loop.</p>
+    
+    <h4>4. Rethink</h4>
+    <p>Rethinking our consumption habits and lifestyle choices is crucial for achieving sustainability. This involves questioning our need for certain products and considering the environmental impact of our actions. Rethinking can lead to more conscious decisions about what we consume, how we dispose of waste, and how we can minimize our ecological footprint.</p>
+    
+    <h4>5. Repair</h4>
+    <p>Repairing items instead of discarding them can extend their lifespan and reduce the amount of waste sent to landfills. Encouraging a culture of repair involves learning basic repair skills, supporting businesses that offer repair services, and advocating for products designed for durability and easy repairability. Repairing items not only saves resources but also saves money and promotes a more sustainable approach to consumption.</p>
+
+        </div>
+        
+    </div>
+    
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+    </div>
+    <div class="c-social-icons c-social-icons--inline-title">
+        <div style="text-align: center;"> 
+        <h1><span class="c-social-icons__title">Follow us:</span></h>
+            <br>
+
+        <a class="c-social-icons__icon-link" href="#" title="Follow us on Twitter" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter Icon">
+        </a>
+
+        <a class="c-social-icons__icon-link" href="#" title="Follow us on Facebook" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook Icon">
+        </a>
+
+        <a class="c-social-icons__icon-link" href="https://www.instagram.com/sakshi_sain19o1?igsh=MXdzM3h3a2gwZjJtYg==" title="Follow us on Instagram" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram Icon">
+        </a>
+
+        <a class="c-social-icons_icon-link" href="https://youtube.com/@Being_Ronak?si=i_puhFq9CgVD-4O" title="See our channel on Youtube" target="_blank">
+          <img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube Icon">
+      </a>
+      
+
+        <!-- Add LinkedIn Icon -->
+        <a class="c-social-icons__icon-link" href="https://www.linkedin.com/in/krishna-khaitan-460b6b278/" title="Connect with us on LinkedIn" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn Icon">
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

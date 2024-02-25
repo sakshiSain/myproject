@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco-Heroes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(62, 41, 14);
+      margin: 0;
+      padding: 0;
+
+
+
+    }
+
+    header {
+      margin-top: 0px;
+      background-color: rgb(143, 111, 70);
+      position: fixed;
+      width: 100%;
+      align-items: right;
+      padding: 10px;
+      text-align: right;
+      padding-right: 30px;
+      top: 0;
+      left: 0;
+      z-index: 999;
+
+    }
+
+
+    .button {
+      text-align: right;
+      padding-right: 20px;
+    }
+
+    .btn {
+      padding: 3px 8px;
+      font-weight: 400;
+      color: white;
+      background-color: rgba(248, 243, 243, 0.021);
+      border-radius: 4px;
+      border: 1px solid white;
+      cursor: pointer;
+
+    }
+
+    .btn-red {
+      background-color: rgb(67, 40, 4);
+      color: white;
+      padding: 3px 24px;
+      font-size: 20px;
+      border-radius: 4px;
+      font-weight: 400;
+    }
+
+    .btn-red-sm {
+      background-color: rgb(67, 40, 4);
+      color: white;
+    }
+
+    main {
+      background-color: rgb(67, 40, 4);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 20px;
+      padding-top: 60px;
+    }
+
+    section {
+      display: flex;
+      justify-content: space-around;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+
+    }
+
+
+    h2 {
+      text-align: center;
+    }
+
+    .flashcard {
+      width: 300px;
+      height: 500px;
+      /* Adjusted height to accommodate the content */
+      perspective: 1000px;
+      margin: 20px;
+      padding: 20px;
+
+    }
+
+    .card {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 2s ease;
+    }
+
+    .card:hover {
+      transform: rotateY(180deg);
+    }
+
+    .card .face {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+
+    .front {
+      background-color: beige;
+
+    }
+
+    .back {
+      background-color: beige;
+      transform: rotateY(180deg);
+      text-align: center;
+    }
+
+    .profile-image {
+      width: 200px;
+      /* Adjust the size of the profile image */
+      height: 200px;
+      object-fit: cover;
+
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div>
+    </div>
+    <div class="button">
+      <a href="./index1.html"><button class="btn btn-red-sm">Home</button></a>
+      <button class="btn btn-red-sm">Contact</button>
+      <button class="btn btn-red-sm">Information</button>
+      <a href="./about us.html"><button class="btn btn-red-sm">About Us</button></a>
+    </div>
+  </header>
+  <main>
+    <h1>Eco Heroes</h1>
+  </main>
+  <section>
+
+    <div class="flashcard">
+      <div class="card">
+        <div class="face front">
+          <img src="./Leo+Sordello-Savale.jpeg" alt="Eco Hero 1" class="profile-image">
+          <div>
+            <h2>Leo Sordello-Savale</h2>
+          </div>
+          <div>
+            <h2>Age 8<br>
+              London, United Kingdom<br>
+              Leo’s Animal Planet</h2>
+          </div>
+        </div>
+        <div class="face back">
+          Eight-year-old Leo, creator of "Leo’s Animal Planet" on YouTube, boasts 1,100 subscribers and 100,000 views.
+          Leo's videos, ranging from sharks to bees, entertain and educate on animal conservation.
+
+          Driven by lockdown boredom, Leo and his mother produce engaging content to raise awareness about endangered
+          species and climate change. His storytelling, facts, and interviews with experts make his videos globally
+          popular and educational tools in schools.
+
+          Leo's mission is to inspire people to protect nature. His work garnered praise from David Attenborough, UK
+          Prime Minister Boris Johnson, and awards, including the Young Animal Hero Award in 2022 and the CREST Young
+          Stem Award in 2023.
+        </div>
+      </div>
+    </div>
+
+    <div class="flashcard">
+      <div class="card">
+        <div class="face front">
+          <img src="./Eiha+Dixit.jpeg" alt="Eco-hero 2" class="profile-image">
+          <div>
+            <h2>Eiha Dixit</h2>
+          </div>
+          <div>
+            <h2>Age 9<br>
+              Meerut, Uttar Pradesh, India<br>
+              Green Eiha Smile Foundation</h2>
+          </div>
+        </div>
+        <div class="face back">
+          Eiha, starting at age four, leads the Green Eiha Smile Foundation, transforming her home into an environmental
+          hub. Her group has planted 20,000+ saplings using water-efficient methods, creating green spaces in Indian
+          cities.
+
+          Beyond planting, they make seed balls from fruit seeds and repurpose donated plants into a plant bank,
+          offering free resources. Eiha recycles single-use plastic bottles into plant holders.
+
+          Recognized globally, Eiha spoke at the UN's World Peace Summit 2022, receiving accolades like the Prime
+          Minister National Child Award and Water Hero Award. As a brand ambassador, she advocates for
+          Mission100CroreTree and Clean India, Green India.
+
+          Eiha's mission: "Beautify the earth with greenery while we're alive," committed to planting trees until her
+          last breath.
+        </div>
+      </div>
+    </div>
+    <div class="flashcard">
+      <div class="card">
+        <div class="face front">
+          <img src="./Manya+Harsha.jpg" alt="Eco Hero 3" class="profile-image">
+          <div>
+            <h2>Manya Harsha</h2>
+          </div>
+          <div>
+            <h2>Age 12<br>
+              Bangalore, India<br>
+              Youth for Climate Action</h2>
+          </div>
+        </div>
+        <div class="face back">
+          At 13, Manya is a passionate environmentalist, poet, and author. Inspired by nature and driven by climate
+          concerns, she has written seven environmental books and runs The Little Environmentalist YouTube channel.
+          Since 2020, she publishes SUNSHINE, a monthly youth magazine promoting climate action.
+
+          Manya actively engages in environmental activities like planting saplings, distributing sustainable bags, and
+          organizing clean-up drives. Despite her accomplishments, she remains humble, emphasizing the importance of
+          small actions. Her focus is on creating a better future for the next generation.
+        </div>
+      </div>
+    </div>
+    <div class="flashcard">
+      <div class="card">
+        <div class="face front">
+          <img src="./Karnav+Rastogi.jpg" alt="Profile Image" class="profile-image">
+          <div>
+            <h2>Karnav Rastogi</h2>
+          </div>
+          <div>
+            <h2>Age 13<br>
+              Andheri West, Mumbai, India<br>
+              Each One, Read One to Plant One</h2>
+          </div>
+        </div>
+        <div class="face back">
+          Inspired by nature, author and poet Karnav Rastogi joined the Tide Turner Plastic Challenge, aiming to reduce
+          plastic waste. He created two e-books on climate change, positively impacting students and adults. Realizing
+          some lacked internet access, he distributed 5,000 hard copies of his latest book, “Kartik, Mixie & Climate
+          Change,” initiating “Each One, Read One to Plant One.” The book includes a green pledge and a neem seed
+          packet, promoting tree planting. Karnav aims to distribute 10,000 copies in multiple languages, emphasizing
+          the role of students as champions of change to raise climate awareness.
+        </div>
+      </div>
+    </div>
+    <div class="flashcard">
+      <div class="card">
+        <div class="face front">
+          <img src="./Nirvaan+Somany.jpg" alt="Profile Image" class="profile-image">
+          <div>
+            <h2>Nirvaan Somany</h2>
+          </div>
+          <div>
+            <h2>Age 16<br>
+              New Delhi, India<br>
+              Project Jeans – Blue to Green</h2>
+          </div>
+        </div>
+        <div class="face back">
+          Shocked by the environmental impact of denim production, Nirvaan decided to address the issue. Learning that
+          used jeans contribute to landfill waste, he repurposed them into washable and insulating sleeping bags for the
+          homeless. With 6,000 collected pairs, he educated through social media, organized drop-offs, and distributed
+          bags through NGOs. Nirvaan's initiative, born out of concern for the planet and the underprivileged, has
+          provided 800 individuals with practical and sustainable sleeping solutions.
+        </div>
+      </div>
+    </div>
+    <div class="flashcard">
+      <div class="card">
+        <div class="face front">
+          <img src="./Mannat+Kaur.jpg" alt="Profile Image" class="profile-image">
+          <div>
+            <h2>Mannat Kaur</h2>
+          </div>
+          <div>
+            <h2>Age 15<br>
+              New Delhi, India<br>
+              Indigenous Greywater Home Treatment Plan</h2>
+          </div>
+        </div>
+        <div class="face back">
+          Mannat, a young scientist, addresses water scarcity and carbon emissions by designing a system to collect and
+          filter greywater for reuse in households. Her invention, consisting of Bilge Vessel (BV) and Scupper Valve
+          (SV), is a compact, smart, and low-cost solution that fits seamlessly into existing plumbing. If adopted by
+          20% of homes in her city, it could save thousands of liters of fresh water daily and reduce operational costs.
+          Mannat has presented her innovation at global forums, emphasizing the decentralization of wastewater treatment
+          and showcasing her commitment to making a positive impact on the world.
+        </div>
+      </div>
+    </div>
+    <div class="flashcard">
+      <div class="card">
+        <div class="face front">
+          <img src="./Satvika+Iyer.jpg" alt="Profile Image" class="profile-image">
+          <div>
+            <h2>Satvika Iyer</h2>
+          </div>
+          <div>
+            <h2>Age 16<br>
+              Milpitas,California,USA<br>
+              Plant Nutrition & Waste Management of School Food Systems</h2>
+          </div>
+        </div>
+        <div class="face back">
+          During the COVID-19 pandemic, 8th-grader Satvika Iyer noticed issues in school lunches. In high school, she
+          advocated for plant-based nutrition and waste management, successfully implementing a plant-based menu in her
+          school district. She influenced the Healthy Meals, Healthy Kids Act, and shared her vision at the White House.
+          Satvika now aims to assist other districts in adopting sustainable food systems and advocating for legislation
+          to reduce food waste.
+        </div>
+      </div>
+    </div>
+    <div class="flashcard">
+      <div class="card">
+        <div class="face front">
+          <img src="./Rahul+Vijayan.jpg" alt="Profile Image" class="profile-image">
+          <div>
+            <h2>Rahul Vijayan</h2>
+          </div>
+          <div>
+            <h2>Age 16<br>
+              Pearland, Texas, USA<br>
+              Farm to Tray</h2>
+          </div>
+        </div>
+        <div class="face back">
+          Rahul noticed a nutrition problem in public schools, where unhealthy frozen meals were contributing to
+          childhood obesity. He founded the non-profit Farm to Tray, introducing hydroponic farming to provide fresh
+          organic produce. Starting at Shadowcreek High School, his 4x6-foot hydroponic system became a model for 18
+          Houston schools. Supported by grants, he expanded to California and New York. Rahul hosted a successful
+          hydroponic symposium, leading to a collaboration with Houston Methodist Hospital to use hydroponic kits as
+          portable healing gardens for oncology patients. His initiative has earned praise for reimagining childhood
+          nutrition in public schools.
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

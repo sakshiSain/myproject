@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            perspective: 1000px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-container {
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 10s infinite linear;
+        }
+
+        .text {
+            font-size: 3em;
+            font-family: 'Arial', sans-serif;
+            color: transparent;
+            position: relative;
+            margin: 0;
+        }
+
+        .text:before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: #3498db; /* Text color */
+            background: url('your-video.mp4'); /* Replace 'your-video.mp4' with your actual video file */
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            transform: translateZ(5px);
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-container">
+            <h1 class="text" data-text="Your Text">Your Text</h1>
+        </div>
+    </div>
+    <script>
+      // Set up scene
+      var scene = new THREE.Scene();
+      var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      var renderer = new THREE.WebGLRenderer();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+
+      // Create text geometry
+      var textGeometry = new THREE.TextGeometry('Your Text', {
+          font: new THREE.FontLoader().load('https://threejs.org/examples/fonts/helvetiker_regular.typeface.json'),
+          size: 5,
+          height: 1,
+          curveSegments: 12,
+          bevelEnabled: true,
+          bevelThickness: 0.2,
+          bevelSize: 0.1,
+          bevelOffset: 0,
+          bevelSegments: 5
+      });
+
+      // Load video texture
+      var video = document.createElement('video');
+      video.src = 'your-video.mp4'; // Replace 'your-video.mp4' with your actual video file
+      video.loop = true;
+      video.muted = true;
+      video.play();
+
+      var videoTexture = new THREE.VideoTexture(video);
+      videoTexture.minFilter = THREE.LinearFilter;
+      videoTexture.magFilter = THREE.LinearFilter;
+
+      // Create material with video texture
+      var material = new THREE.MeshBasicMaterial({ map: videoTexture });
+
+      // Create mesh with text geometry and video material
+      var textMesh = new THREE.Mesh(textGeometry, material);
+      scene.add(textMesh);
+
+      // Set camera position
+      camera.position.z = 10;
+
+      // Animation loop
+      function animate() {
+          requestAnimationFrame(animate);
+          textMesh.rotation.x += 0.01;
+          textMesh.rotation.y += 0.01;
+          renderer.render(scene, camera);
+      }
+
+      animate();
+  </script>
+</body>
+</html>

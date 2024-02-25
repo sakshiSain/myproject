@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:rgb(62, 41, 14);
+        }
+
+        header {
+            margin-top: 0px;
+            background-color: rgb(143, 111, 70);
+            position: fixed;
+            width: 100%;
+            align-items: right;
+            padding: 10px;
+            text-align: right;
+            padding-right: 30px;
+
+        }
+
+        h1 {
+            color: white;
+            /* Change header text color to white */
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        h2{
+            color: white;
+        }
+
+        p{
+            color: beige;
+        }
+
+        li{
+            color: beige;
+        }
+        label{
+            color: beige;;
+        }
+
+        .button {
+            text-align: right;
+            padding-right: 20px;
+        }
+
+     
+        .set{
+            color:rgb(143, 111, 70);
+        }
+
+        .btn {
+            padding: 3px 8px;
+            font-weight: 400;
+            color: white;
+            background-color: rgba(248, 243, 243, 0.021);
+            border-radius: 4px;
+            border: 1px solid white;
+            cursor: pointer;
+
+        }
+
+        .btn-red {
+            background-color: rgb(67, 40, 4);
+            color: white;
+            padding: 3px 24px;
+            font-size: 20px;
+            border-radius: 4px;
+            font-weight: 400;
+        }
+
+        .btn-red-sm {
+            background-color: rgb(67, 40, 4);
+            color: white;
+        }
+
+        main {
+            padding: 20px;
+            padding-top: 50px;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+    <script>
+        function submitForm() {
+            alert("Thank you for contacting us!");
+            // Optionally, you can submit the form to a server here
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div>
+        </div>
+        <div class="button">
+            <a href="./index1.html"><button class="btn btn-red-sm">Home</button></a>
+            <button class="btn btn-red-sm">Contact</button>
+            <button class="btn btn-red-sm">Information</button>
+            <a href="./about us.html"><button class="btn btn-red-sm">About Us</button></a>
+        </div>
+    </header>
+
+
+
+    <main>
+
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>You can contact us through the following methods:</p>
+            <ul>
+                <li>Email: srrktech123@gmail.com</li>
+                <li>Phone: +91 9876543210</li>
+                <li>Address: Mody University k samne wali gali, Lakshmangarh, Rajasthan,india</li>
+            </ul>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="#" method="POST" onsubmit="submitForm(); return false;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"  class="set"  required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" class="set" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"  class="set"  required></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
